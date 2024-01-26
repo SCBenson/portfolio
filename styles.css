@@ -17,10 +17,16 @@
 .i {
     background-color: #1F2937;
     color: white;
+    display:flex;
+    flex: 1;
 }
-div > h1 {
-    margin:15px;
+.nested{
+    flex: 1;
 }
+.title {
+    font-size: 20px;
+}
+
 .ii {
     background-color: white;
 }

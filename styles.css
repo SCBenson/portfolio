@@ -1,44 +1,23 @@
-.flex-container, html, body{
+.front-page-container, html, body{
     height: 100%;
     margin: 0px;
 }
 
-.flex-container {
+.front-page-container {
     display: flex;
     flex-direction: column;
 }
 
-.flex-container div {
+.front-page-container div {
     flex-basis: 1fr 1fr 1fr 2/3fr 1/3fr;
     flex: 1 1 300px;
     /* justify-content: stretch; */
 }
 
-.i {
+.header-container {
     background-color: #1F2937;
     color: white;
     display:flex;
     flex: 1;
 }
-.nested{
-    flex: 1;
-}
-.title {
-    font-size: 20px;
-}
 
-.ii {
-    background-color: white;
-}
-.iii {
-    background-color: #E5E7EB;
-}
-div > .iv {
-    background-color: white;
-    flex: 1 1 200px;
-}
-div > .v {
-    background-color: #1F2937;
-    color: white;
-    flex: 1 1 100px;
-}

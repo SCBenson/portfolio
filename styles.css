@@ -1,0 +1,36 @@
+.flex-container, html, body{
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container div {
+    flex-basis: 1fr 1fr 1fr 2/3fr 1/3fr;
+    flex: 1 1 300px;
+    /* justify-content: stretch; */
+}
+
+.i {
+    background-color: #1F2937;
+    color: white;
+}
+div > h1 {
+    margin:15px;
+}
+.ii {
+    background-color: white;
+}
+.iii {
+    background-color: #E5E7EB;
+}
+div > .iv {
+    background-color: white;
+    flex: 1 1 200px;
+}
+div > .v {
+    background-color: #1F2937;
+    flex: 1 1 100px;
+}

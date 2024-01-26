@@ -1,5 +1,6 @@
 .flex-container, html, body{
     height: 100%;
+    margin: 0px;
 }
 
 .flex-container {
@@ -32,5 +33,6 @@ div > .iv {
 }
 div > .v {
     background-color: #1F2937;
+    color: white;
     flex: 1 1 100px;
 }

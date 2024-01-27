@@ -79,6 +79,8 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    padding: 0 200px 0 200px; 
 }
 
 .level-one-title{
@@ -114,18 +116,67 @@
 }
 
 /* Level 2 */
-.level-one-container{
-    background-color: white;
-    padding: 0 200px 0 200px; 
-}
-
 .level-two-container {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 200px 0 200px; 
 }
 
+.level-two-quote{
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 300;
+    width: 600px;
+    margin-bottom: 5px;
+}
+
+.level-two-author{
+    margin-left: calc(600px - 150px);
+    width: 300px;
+    font-weight: 600;
+}
+
+/* Level 3 */
 .level-three-container{
+    display: flex;
     padding: 0 200px 0 200px; 
+}
+
+.level-three-box{
+    display: flex;
+    background-color: #3882F6;
+    margin: 40px 300px 40px 300px;
+    border-radius: 5px;
+    color: #F9FAF8;
+    height: auto;
+    width: 1200px;
+}
+
+.level-three-box-prompt{
+    display:flex;
+    flex-direction: column;
+    width: 600px;
+    margin-right: 0px;
+
+}
+
+.prompt-header , .prompt-detail{
+    margin-left: 20px;
+    width: 450px;
+}
+
+.level-three-box-button{
+    border: 3px solid #F9FAF8;
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .footer-container{

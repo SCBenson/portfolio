@@ -9,15 +9,43 @@
 }
 
 .front-page-container div {
-    flex-basis: 1fr 1fr 1fr 2/3fr 1/3fr;
-    flex: 1 1 300px;
-    /* justify-content: stretch; */
-}
-
-.header-container {
-    background-color: #1F2937;
-    color: white;
-    display:flex;
+    flex-direction: column;
     flex: 1;
 }
 
+.header-container{
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: #1F2937;
+    color: white;
+
+}
+
+.level-one-container{
+    background-color: aqua;
+}
+
+.level-two-container {
+    background-color: red;
+}
+
+.level-t
+.header-one{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+}
+
+.header-two{
+    flex-direction: row;
+    border: 1px solid green;
+}
+
+.header-logo {
+    font-size: 25px;
+}
+
+.header-link{
+    font-size: 12px;
+    justify-content: flex-end;
+}

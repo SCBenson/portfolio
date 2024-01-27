@@ -1,6 +1,7 @@
 .front-page-container, html, body{
     height: 100%;
     margin: 0px;
+    
 }
 
 .front-page-container {
@@ -9,43 +10,51 @@
 }
 
 .front-page-container div {
-    flex-direction: column;
     flex: 1;
 }
 
 .header-container{
+    display: flex;
+    padding: 0 200px 0 200px; 
     flex-direction: column;
     border: 1px solid red;
     background-color: #1F2937;
     color: white;
 
 }
-
-.level-one-container{
-    background-color: aqua;
-}
-
-.level-two-container {
-    background-color: red;
-}
-
-.level-t
+/* Header */
 .header-one{
     display: flex;
-    flex-direction: row;
-    border: 1px solid yellow;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.header-two{
-    flex-direction: row;
-    border: 1px solid green;
-}
-
-.header-logo {
+.header-logo:nth-child(1){
     font-size: 25px;
+    align-self: flex-start;
+    flex: 10;
 }
 
 .header-link{
-    font-size: 12px;
-    justify-content: flex-end;
+    font-size: 15px;
 }
+
+/* Level 2 */
+.level-one-container{
+    background-color: white;
+    padding: 0 200px 0 200px; 
+}
+
+.level-two-container {
+    background-color: #E5E7EB;
+    padding: 0 200px 0 200px; 
+}
+
+.level-three-container{
+    padding: 0 200px 0 200px; 
+}
+
+.footer-container{
+    padding: 0 200px 0 200px; 
+}
+

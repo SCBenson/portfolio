@@ -142,7 +142,8 @@
 /* Level 3 */
 .level-three-container{
     display: flex;
-    padding: 0 200px 0 200px; 
+    padding: 0 200px 0 200px;
+    justify-content: center;
 }
 
 .level-three-box{
@@ -152,7 +153,8 @@
     border-radius: 5px;
     color: #F9FAF8;
     height: auto;
-    width: 1200px;
+    min-width: 1200px;
+
 }
 
 .level-three-box-prompt{
@@ -175,7 +177,8 @@
     align-self: center;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
+    max-width: 100px;
+    /* margin-left: 150px;  */
     margin-right: 150px;
 }
 

@@ -1,7 +1,7 @@
 .front-page-container, html, body{
     height: 100%;
     margin: 0px;
-    
+    font-family: sans-serif;
 }
 
 .front-page-container {
@@ -17,7 +17,6 @@
     display: flex;
     padding: 0 200px 0 200px; 
     flex-direction: column;
-    border: 1px solid red;
     background-color: #1F2937;
     color: white;
 
@@ -25,18 +24,93 @@
 /* Header */
 .header-one{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
 }
 
 .header-logo:nth-child(1){
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+    margin-top: 10px;
     align-self: flex-start;
     flex: 10;
 }
 
 .header-link{
-    font-size: 15px;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
+}
+
+.header-two{
+    display: flex;
+    margin: 60px 0 10px 0;
+    align-self: flex-start;
+}
+
+.welcome {
+    font-size: 48px;
+    font-weight:700;
+    color: #F9FAF8;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.header-two-item-two{
+    display: flex;
+}
+
+.header-image{
+    background-color: #3d434e;
+    text-align: center;
+    line-height: 150px;
+}
+
+
+/* Level 1 */
+
+.level-one-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-one-title{
+    font-weight: 800;
+    font-size: 25px;
+    color: #1F2937;
+}
+
+.level-one-image-container {
+    display: flex;
+    gap: 30px;
+}
+
+.image{
+    border: 2.5px solid #3882F6;
+    border-radius: 10px;
+    height: 125px;
+    width: 125px;
+}
+
+.level-one-subtext-container{
+    display: flex;
+    gap: 60px;
+}
+
+.subtext {
+    /* border: 2px solid green; */
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0 10px 0;
+    color: gray;
+    width: 100px;
 }
 
 /* Level 2 */
@@ -55,6 +129,8 @@
 }
 
 .footer-container{
-    padding: 0 200px 0 200px; 
+    padding: 0 200px 0 200px;
+    background-color: #1F2937; 
+    height:50px;
 }
 

@@ -41,6 +41,13 @@
     font-size: 18px;
     color: #E5E7EB;
     margin-top: 10px;
+    text-align: center;
+}
+/* Adding the hover feature, which highlights the tabs on the top,
+when the mouse moves on top of it. */
+.header-link:hover{
+    background-color: rgba(102, 125, 139, 0.5);
+    font-weight: 600;
 }
 
 .header-two{

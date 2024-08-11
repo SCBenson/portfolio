@@ -1,44 +1,51 @@
-.flex-container, html, body{
-    height: 100%;
-    margin: 0px;
+@font-face {
+    font-family: 'My Font';
+    src: url(./ThaleahFat.ttf);
 }
 
-.flex-container {
+.blink {
+    font-size: inherit;
+    animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation{
+    from{
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+html, body{
+    font-family: 'My Font', sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.flex-container div {
-    flex-basis: 1fr 1fr 1fr 2/3fr 1/3fr;
-    flex: 1 1 300px;
-    /* justify-content: stretch; */
+main {
+    background-color: black;
+    background-image: url(./amsterdam-grayscale.png);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top: 50px;
+    height: calc(100vh-50px);
+    width: 100%;
 }
 
-.i {
-    background-color: #1F2937;
+.introduction{
     color: white;
-    display:flex;
-    flex: 1;
-}
-.nested{
-    flex: 1;
-}
-.title {
-    font-size: 20px;
-}
+    font-size: 30px;
 
-.ii {
-    background-color: white;
-}
-.iii {
-    background-color: #E5E7EB;
-}
-div > .iv {
-    background-color: white;
-    flex: 1 1 200px;
-}
-div > .v {
-    background-color: #1F2937;
-    color: white;
-    flex: 1 1 100px;
 }

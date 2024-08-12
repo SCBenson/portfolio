@@ -33,17 +33,6 @@ body:after{
     url(../images/x-icon-color.png) 
     url(../images/tiktok-icon-color.png);
 }
-/*Placing the header logo image and sizing it appropriately: also adding transition.*/
-.header-main{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-logo{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-}
 
 .header-logo img{
     width: fit-content;
@@ -100,35 +89,6 @@ body:after{
 
 .header-socials-tt:hover{
     background-image: url(../images/tiktok-icon-color.png);
-}
-
-/*Formatting the introduction text for font and font-size.*/
-.hero-intro{
-    color: white;
-    font-size: 80px;
-    padding: 300px 0px 0px 25%;
-
-}
-/*Placing the hero background image appropriately.*/
-.hero-image{
-    height: calc(100vh-50px);
-    margin-top: 50px;
-    width: 100%;
-    background-color: #1e1e1e;
-    background-image: url(../images/amsterdam-grayscale.png), url(../images/hero-background-pattern-scaled.png);
-    background-size: 70vh, auto;
-    background-repeat: no-repeat, repeat;
-    background-position: bottom, top left;
-}
-
-.history-main{
-    height: 2000px;
-    width: 100%;
-    background-color: #bbbbbb;
-    background-image: url(../images/capacitor-timeline-image-scaled.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
 }
 
 .history-title{

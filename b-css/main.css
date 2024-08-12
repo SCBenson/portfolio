@@ -13,15 +13,46 @@ header {
     border-bottom-style: solid;
     border-bottom-color: #1e1e1e;
     border-bottom-width: thick;
+    display: flex;
+    justify-content: space-between;
 }
-
-/*Standard hero section dimensions.*/
-.hero-image{
-    height: 100vh; /*Trial and error dimension: wanted it to fit to the bottom when you open the page.*/
+/*Placing the hero background image appropriately.*/
+.hero-main{
+    height: 100vh;
+    margin-top: 50px;
     width: 100%;
+    background-color: #1e1e1e;
+    background-image: url(../images/amsterdam-grayscale.png), url(../images/hero-background-pattern-scaled.png);
+    background-size: 70vh, auto;
+    background-repeat: no-repeat, repeat;
+    background-position: bottom, top left;
+    border-bottom-width: thick;
     border-bottom-style: solid;
     border-bottom-color: #1e1e1e;
-    border-bottom-width: thick;
+}
+
+.header-logo{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+/*Formatting the introduction text for font and font-size.*/
+.hero-intro{
+    color: white;
+    font-size: 80px;
+    padding: 300px 0px 0px 25%;
+
+}
+
+.history-main{
+    height: 2000px;
+    width: 100%;
+    background-color: #bbbbbb;
+    background-image: url(../images/capacitor-timeline-image-scaled.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
 }
 
 h1{
@@ -34,4 +65,20 @@ h1{
 footer{
     width: 100%;
     height: 500px;
+}
+
+@media (max-width: 600px) {
+    .header-main{
+        width: 100%;
+    }
+    .hero-main{
+        width: 100%;
+    }
+    .hero-intro{
+        padding: 150px 0px 0px 10%;
+        font-size: 40px;
+    }
+    .history-main{
+        width: 100%;
+    }
 }

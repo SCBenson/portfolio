@@ -91,30 +91,6 @@ body:after{
     background-image: url(../images/tiktok-icon-color.png);
 }
 
-.history-title{
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    padding-top: 50px;
-    font-size: 80px;
-}
-
-.timeline{
-    margin: 200px auto auto 400px;
-    max-width: fit-content;
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 150px;
-    color: black;
-    background-color: #bbbbbb;
-}
-
-.timeline-component{
-    font-size: 80px;
-}
-
 .projects-main{
     height: 2000px;
     width: 100%;

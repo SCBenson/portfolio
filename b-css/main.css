@@ -17,7 +17,7 @@ header {
 
 /*Standard hero section dimensions.*/
 .hero-image{
-    height: 1260px; /*Trial and error dimension: wanted it to fit to the bottom when you open the page.*/
+    height: 100vh; /*Trial and error dimension: wanted it to fit to the bottom when you open the page.*/
     width: 100%;
     border-bottom-style: solid;
     border-bottom-color: #1e1e1e;

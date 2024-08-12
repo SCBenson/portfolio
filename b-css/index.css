@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'ThaleahFat';
+    src: url(../fonts/thaleahfat-webfont.woff);
+}
+
+.blink {
+    font-size: inherit;
+    animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation{
+    from{
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+html, body{
+    font-family: 'ThaleahFat', sans-serif;
+}
+
+/*Preload the transition header*/
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../images/capacitor_header_logo_hover.png) 
+    url(../images/youtube-icon-color.png) 
+    url(../images/x-icon-color.png) 
+    url(../images/tiktok-icon-color.png);
+}
+/*Placing the header logo image and sizing it appropriately: also adding transition.*/
+.header-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.header-logo img{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.header-logo-title{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+}
+
+.header-socials{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-socials-yt{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/youtube-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-socials-x{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/x-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-socials-tt{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tiktok-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-socials-yt:hover{
+    background-image: url(../images/youtube-icon-color.png);
+}
+
+.header-socials-x:hover{
+    background-image: url(../images/x-icon-color.png);
+}
+
+.header-socials-tt:hover{
+    background-image: url(../images/tiktok-icon-color.png);
+}
+
+/*Formatting the introduction text for font and font-size.*/
+.hero-intro{
+    color: white;
+    font-size: 70px;
+    padding: 300px 0px 0px 550px;
+
+}
+/*Placing the hero background image appropriately.*/
+.hero-image{
+    height: calc(100vh-50px);
+    margin-top: 50px;
+    width: 100%;
+    background-color: #1e1e1e;
+    background-image: url(../images/amsterdam-grayscale.png), url(../images/hero-background-pattern-scaled.png);
+    background-size: 70vh, auto;
+    background-repeat: no-repeat, repeat;
+    background-position: bottom, top left;
+}
+
+.projects-main{
+    height: 2000px;
+    width: 100%;
+    background-color: #bbbbbb;
+}
+
+.projects-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    font-size: 80px;
+}
+
+.footer-main{
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+}

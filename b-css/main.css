@@ -16,6 +16,14 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+
+.header-logo{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
 /*Placing the hero background image appropriately.*/
 .hero-main{
     height: 100vh;
@@ -29,12 +37,6 @@ header {
     border-bottom-width: thick;
     border-bottom-style: solid;
     border-bottom-color: #1e1e1e;
-}
-
-.header-logo{
-    width: fit-content;
-    height: 100%;
-    display: flex;
 }
 
 /*Formatting the introduction text for font and font-size.*/
@@ -67,7 +69,23 @@ footer{
     height: 500px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+    .header-main{
+        width: 100%;
+    }
+    .hero-main{
+        width: 100%;
+    }
+    .hero-intro{
+        padding: 150px 0px 0px 10%;
+        font-size: 40px;
+    }
+    .history-main{
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
     .header-main{
         width: 100%;
     }

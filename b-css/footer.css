@@ -1,0 +1,99 @@
+footer{
+    width: 100vw;
+    height: 200px;
+}
+
+.footer-main{
+    height: 100%;
+    width: 100%;
+    background-color: #bbbbbb;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title{
+    display: flex;
+    font-size: 60px;
+    align-self: center;
+}
+
+.footer-socials{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icon{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+}
+
+.social-yt{
+    background-image: url(../images/youtube-icon.png);
+}
+
+.social-x{
+    background-image: url(../images/x-icon.png);
+}
+
+.social-tt{
+    background-image: url(../images/tiktok-icon.png);
+}
+
+.social-git{
+    background-image: url(../images/github-icon.png);
+}
+
+.social-itch{
+    background-image: url(../images/itch-icon.png);
+}
+
+.social-insta{
+    background-image: url(../images/insta-icon.png);
+}
+
+.social-linkedin{
+    background-image: url(../images/linkedin-icon.png);
+}
+
+.social-mail{
+    background-image: url(../images/email-icon.png);
+}
+
+.social-yt:hover{
+    background-image: url(../images/youtube-icon-color.png);
+}
+
+.social-x:hover{
+    background-image: url(../images/x-icon-color.png);
+}
+
+.social-tt:hover{
+    background-image: url(../images/tiktok-icon-color.png);
+}
+
+.social-git:hover{
+    background-image: url(../images/github-icon-color.png);
+}
+
+.social-itch:hover{
+    background-image: url(../images/itch-icon-color.png);
+}
+
+.social-insta:hover{
+    background-image: url(../images/insta-icon-color.png);
+}
+
+.social-linkedin:hover{
+    background-image: url(../images/linkedin-icon-color.png);
+}
+
+.social-mail:hover{
+    background-image: url(../images/email-icon-color.png);
+}
+

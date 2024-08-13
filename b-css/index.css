@@ -92,14 +92,15 @@ body:after{
 }
 
 .projects-main{
-    height: 2000px;
-    width: 100%;
+    height: 2200px;
+    width: 100vw;
     background-color: #1e1e1e;
 }
 
 .projects-title{
     display: flex;
     justify-content: center;
+    align-content: center;
     margin-top: 0px;
     padding-top: 50px;
     font-size: 80px;
@@ -109,5 +110,5 @@ body:after{
 .footer-main{
     height: 100%;
     width: 100%;
-    background-color: #bbbbbb;
+    background-color: #1e1e1e;
 }

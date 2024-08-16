@@ -21,12 +21,7 @@ header {
     padding-left: 300px;
     padding-right: 300px;
 }
-h1{
-    font-size: 40px;
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 
 .header-main-desktop-version{
     position: fixed;
@@ -191,55 +186,6 @@ h1{
     background-color: #b1b1b1;
     border-radius: 10%;
     padding: 15px 10px;
-}
-
-/*Placing the hero background image appropriately.*/
-.hero-main{
-    height: 100vh;
-    width: 100vw;
-    background-color: #1e1e1e;
-    background-image: url(../images/amsterdam-grayscale.png), url(../images/hero-background-pattern-scaled.png);
-    background-size: 70vh, auto;
-    background-repeat: no-repeat, repeat;
-    background-position: bottom, top left;
-    border-bottom-width: thick;
-    border-bottom-style: solid;
-    border-bottom-color: #1e1e1e;
-}
-
-/*Formatting the introduction text for font and font-size.*/
-.hero-intro{
-    color: white;
-    font-size: 80px;
-    padding-top: 300px;
-}
-
-.hero-card{
-    color: white;
-    font-size: 60px;
-    width: fit-content;
-    padding: 0;
-    margin-left: 1200px;
-}
-
-.hero-hire-anchor{
-    color: white;
-    font-size: 75px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 30px;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 1200px;
-    border-radius: 5px;
-    border: thick solid #ededed;
-}
-
-.hero-hire-anchor:hover{
-    cursor: pointer;
-    border: thick solid green;
-    background-color: rgba(4, 204, 4, 0.753);
-    transition: 0.7s ease;
 }
 
 .history-title{

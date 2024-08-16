@@ -42,7 +42,7 @@ h1{
     height: fit-content;
     margin-left: 1200px;
     border-radius: 5px;
-    border: thick solid #ededed;
+    border: 5px solid #ededed;
 }
 
 .hero-hire-anchor:hover{
@@ -61,17 +61,28 @@ h1{
         max-width: 600px;
     }
     .content-wrapper{
-        padding: 0 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-
-    .hero-main{
-        
-    }
-
     .hero-intro{
         font-size: 3rem;
-
+        padding-top: 100px;
     }
+    .hero-card{
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .hero-hire-anchor{
+        margin: 0;
+        background-color: rgba(4, 204, 4, 0.302);
+        font-size: 2.5rem;
+        height: 50px;
+        width: fit-content;
+    }
+
     .main-desktop-version{
         display: none;
     }

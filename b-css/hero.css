@@ -64,9 +64,14 @@ h1{
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .hero-main{
+        background-size: 50vh, auto;
+    }
+
     .hero-intro{
         font-size: 3rem;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .hero-card{
         font-size: 2rem;

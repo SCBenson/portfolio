@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./b-css/reset.css">
         <link rel="stylesheet" href="./b-css/main.css">
         <link rel="stylesheet" href="./b-css/projects.css">
+        <link rel="stylesheet" href="./b-css/about.css">
         <link rel="stylesheet" href="./b-css/footer.css">
         <link rel="stylesheet" href="./b-css/index.css">
         <link rel="icon" href="./images/favicon_capacitor.png" type="image/favicon_capacitor">
@@ -19,10 +20,28 @@
                 <img src="./images/capacitor_header_logo.png" onmouseover="this.src='./images/capacitor_header_logo_hover.png'" 
                 onmouseout="this.src='./images/capacitor_header_logo.png'" alt="header-logo">
                 <h1 class = "header-logo-title">Capacitor<span class="blink">_</span></h1>
-                <nav class="header-nav">
+                
+                <nav class="header-nav mobile-version">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a >About Me</a></li>
+                        <li><div class="dropdown">
+                            <button class="dropdown-btn">Nav
+                                <img class="dropdown-arrow-down" src="./images/dropdown-arrow-down.png">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#home">Home</a>
+                                <a href="#projects-section">Projects</a>
+                                <a href="#about">About me</a>
+                            </div>
+                            </div></li>
+                        <li>
+                    </ul>
+                </nav>
+
+
+                <nav class="header-nav desktop-version">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
                         <li><a href="#projects-section">Projects</a></li>
                     </ul>
                 </nav>
@@ -36,10 +55,18 @@
             
         </header>
         <main>
-            <div class="hero-main content-wrapper">
-                <h1 class="hero-intro">Sean Benson<br>Game Developer,<br>Ireland</h1>
-                <p class = "hero-">I make 2-D games in Unity!<br><a>Hire me!</a></p>
+            <div class="hero-main content-wrapper" id="home">
+                <h1 class="hero-intro">Sean Benson<br>Freelance<br>Game Developer,<br>Ireland</h1>
+                <div class="hero-card content-wrapper">
+                    <p class = "hero-card-info">I make 2-D games 
+                        <br>in Unity!
+                    </p>
+                </div>
+                <div class="hero-hire-anchor">
+                    <a href="https://www.fiverr.com/capacitor_dev?up_rollout=true" target="_blank" class="hero-card-hire">Hire me!</a>
+                </div>
             </div>
+            
         </main>
         <section class="projects-main content-wrapper" id="projects-section">
             <h1 class="projects-title">My Projects</h1>
@@ -137,6 +164,32 @@
                 </div>
                 
             </div>
+        </section>
+        <section class="about-main content-wrapper" id="about">
+            <h1 class="about-main-title">About me</h1>
+            <div class="about-main-content">
+                <div class="about-main-profile">
+                    <img class="about-img" src="./images/sean-pic1-gray.png" style="border-radius: 50%; border: 5px solid #1e1e1e;">
+                </div>
+                <div class="about-main-text">
+                    <h2 class="background-title">My Background</h2>
+                    <p>My name is Sean Benson, and I am an Irish game developer. 
+                        <br><br>I have been working as a professional Engineer <br>for the past +2 years. </p>
+                    <h2 class="languages-title">Languages and Engines</h2>
+                    <p>Currently working with the Unity Engine and C#. 
+                        <br><br>Additionally, I am learning openGL with C++.
+                        <br><br>I created this portfolio website myself using
+                        <br>HTML and CSS.
+                    </p>
+                    <h2 class="game-history-title">My History in Game Development</h2>
+                    <p>To date: I have published a 2-D Pong game on itch.io.
+                        <br><br>Freelancing as a solo-game developer.
+                    
+                    </p>
+                </div>
+
+            </div>
+
         </section>
         <!--  
         <div class="history-main content-wrapper">

@@ -28,7 +28,7 @@ h1{
     margin-bottom: 0px;
 }
 
-.header-main{
+.header-main-desktop-version{
     position: fixed;
     top: 0;
     height: 50px;
@@ -42,52 +42,65 @@ h1{
     z-index: 2;
 }
 
-.header-logo{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-}
-
-.header-nav{
-    width: fit-content;
-    height: 100%;
-}
-
-.header-nav ul{
-    list-style: none;
-    margin-left: 30px;
-}
-
-.header-nav ul li{
-    display: inline;
-    float: left;
-}
-
-.header-nav ul li a{
-    padding: 0 10px;
-    font-size: 2rem;
-    line-height: 45px;
-}
-
-.header-nav ul li a:hover{
-    cursor: pointer;
-}
-
-.header-nav {
+.header-main-mobile-version{
     display: none;
 }
 
-.header-logo img{
-    width: fit-content;
+.header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 2px solid yellow;
+}
+
+.header-logo-container{
+    display: flex;
+    width: 250px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo-icon{
+    width: 120px;
     height: 100%;
     display: flex;
 }
 
 .header-logo-title{
     display: flex;
-    width: fit-content;
+    width: 180px;
     height: 100%;
     align-items: center;
+}
+
+.header-nav-container{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-nav-container ul{
+    list-style: none;
+
+}
+
+.header-nav-container ul li{
+    display: inline;
+    float: left;
+}
+
+.header-nav-container ul li a{
+    padding: 0 10px;
+    font-size: 2rem;
+    line-height: 45px;
+}
+
+.header-nav-container ul li a:hover{
+    cursor: pointer;
 }
 
 .header-socials{
@@ -188,7 +201,6 @@ h1{
 /*Placing the hero background image appropriately.*/
 .hero-main{
     height: 100vh;
-    margin-top: 50px;
     width: 100vw;
     background-color: #1e1e1e;
     background-image: url(../images/amsterdam-grayscale.png), url(../images/hero-background-pattern-scaled.png);
@@ -274,28 +286,42 @@ h1{
     background-repeat: repeat;
 }
 
-@media (max-width: 600px){
-    .header-main{
-        height: 80px;
-        width: 100vw;
-    }
-    .header-logo{
-        height: 50%;
-        width: 100px;
-    }
-    
-    .mobile-version{
-        display: block;
-        padding-left: 70px;
-    }
 
-    .desktop-version{
+@media (max-width: 600px){
+    .header-main-desktop-version{
         display: none;
     }
 
-    .header-nav ul{
-        display: block;
-        margin-left: 5px;
+    .header-main-mobile-version{
+        display: flex;
+        min-width: 600px;
+        position: fixed;
+        top: 0;
+        height: 50px;
+        width: 100vw;
+        background-color: #ededed;
+        border-bottom-style: solid;
+        border-bottom-color: #1e1e1e;
+        border-bottom-width: thick;
+        z-index: 2;
+    }
+
+    .header-container{
+        display: flex;
+        height: 50px;
+        width: 100%;
+        min-width: 600px;
+    }
+
+    .header-logo-container{
+        border: 1px solid green;
+        width: fit-content;
+    }
+
+    .header-nav-container{
+        border: 1px solid magenta;
+        width: fit-content;
+        margin-left: auto;
     }
 
 }
@@ -313,7 +339,12 @@ h1{
 }
 
 @media (min-width: 1200px){
-    
+    .header-main-mobile-version{
+        display: none;
+    }
+    .header-main-desktop-version{
+        display: flex;
+    }
 }
 
 

@@ -234,24 +234,26 @@ header {
     }
 
     .header-main-mobile-version{
+        position: fixed;
+        top: 0;
+        z-index: 1000;
         display: flex;
         min-width: 0px;
         max-width: 600px;
-        position: fixed;
-        top: 0;
         height: 60px;
         width: 100%;
         background-color: #ededed;
         border-bottom-style: solid;
         border-bottom-color: #1e1e1e;
         border-bottom-width: thick;
-        z-index: 2;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
     .header-container{
+        position: sticky;
+        top: 0;
         display: flex;
         height: 100%;
         width: 100vw;

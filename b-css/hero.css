@@ -54,7 +54,27 @@ h1{
 
 
 @media (max-width: 600px){
+    .main-mobile-version{
+        display: flex;
+        width: 100%;
+        min-width: 0px;
+        max-width: 600px;
+    }
+    .content-wrapper{
+        padding: 0 50px;
+    }
 
+    .hero-main{
+        
+    }
+
+    .hero-intro{
+        font-size: 3rem;
+
+    }
+    .main-desktop-version{
+        display: none;
+    }
 }
 
 @media (min-width: 601px){
@@ -72,5 +92,8 @@ h1{
 @media (min-width: 1200px){
     .main-mobile-version{
         display: none;
+    }
+    .main-desktop-version{
+        display: flex;
     }
 }

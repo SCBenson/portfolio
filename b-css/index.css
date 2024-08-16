@@ -22,91 +22,11 @@ html, body{
     scroll-behavior: smooth;
 }
 
-/*Preload the transition header*/
-body:after{
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    content: url(../images/capacitor_header_logo_hover.png) 
-    url(../images/youtube-icon-color.png) 
-    url(../images/x-icon-color.png) 
-    url(../images/tiktok-icon-color.png);
-}
 
-.header-logo img{
-    width: fit-content;
-    height: 100%;
-    display: flex;
-}
 
-.header-logo-title{
-    display: flex;
-    width: fit-content;
-    height: 100%;
-    align-items: center;
-}
 
-.header-socials{
-    width: 140px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
 
-.header-socials-yt{
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/youtube-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.header-socials-x{
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/x-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-socials-tt{
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/tiktok-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-socials-yt:hover{
-    background-image: url(../images/youtube-icon-color.png);
-}
-
-.header-socials-x:hover{
-    background-image: url(../images/x-icon-color.png);
-}
-
-.header-socials-tt:hover{
-    background-image: url(../images/tiktok-icon-color.png);
-}
-
-.projects-main{
-    height: 2200px;
-    width: 100vw;
-    background-color: #1e1e1e;
-}
-
-.projects-title{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 0px;
-    padding-top: 50px;
-    font-size: 80px;
-    color: white;
-}
 
 @media (max-width: 600px){
 

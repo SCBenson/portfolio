@@ -106,4 +106,12 @@ footer{
         width: fit-content;
         font-size: 2rem;
     }
+
+    .footer-socials{
+        gap: 10px;
+    }
+    .footer-icon{
+        height: 40px;
+        width: 40px;
+    }
 }

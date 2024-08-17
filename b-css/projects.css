@@ -1,4 +1,10 @@
-.projects-main{
+.projects-main-desktop-version{
+    background-image: url(../images/projects-background.png);
+    background-size: 40vh;
+    background-repeat: repeat;
+}
+
+.projects-main-desktop-version{
     height: 2200px;
     width: 100vw;
     background-color: #1e1e1e;
@@ -95,7 +101,49 @@
 }
 
 @media (max-width: 600px){
+    .projects-main-desktop-version{
+        display: none;
+    }
+    .projects-main-mobile-version{
+        background-image: url(../images/projects-background.png);
+        background-size: 40vh;
+        background-repeat: repeat;
+        background-color: #1e1e1e;
+        display: flex;
+        min-width: 0px;
+        max-width: 600px;
+        width: 100vw;
+        height: 900px;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .projects-title{
+        display: flex;
+        text-align: center;
+        height: fit-content;
+        padding-top: 20px;
+    }
 
+    .projects-title h1{
+        font-size: 4rem;
+    }
+
+
+    .projects-grid{
+        grid-template-rows: 350px 350px;
+        grid-template-columns: 400px;
+    }
+
+    .project-1{
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .project-2{
+        grid-row:auto;
+        grid-column:auto;
+    }
 }
 
 @media (min-width: 601px){
@@ -111,5 +159,10 @@
 }
 
 @media (min-width: 1200px){
-    
+    .projects-main-desktop-version{
+        display: flex;
+    }
+    .projects-main-mobile-version{
+        display: none;
+    }
 }

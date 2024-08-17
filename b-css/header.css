@@ -226,11 +226,7 @@ header {
     font-size: 80px;
 }
 
-.projects-main{
-    background-image: url(../images/projects-background.png);
-    background-size: 40vh;
-    background-repeat: repeat;
-}
+
 
 
 @media (max-width: 600px){

@@ -97,3 +97,13 @@ footer{
     background-image: url(../images/email-icon-color.png);
 }
 
+@media (max-width: 600px){
+    .footer-main{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-title{
+        width: fit-content;
+        font-size: 2rem;
+    }
+}
